@@ -12,35 +12,16 @@
 </head>
 
 <body>
-  <header class="container-fluid">
+  <header class="main-header">
     <a href="index.html"><img src="img/pokemon_logo.png" alt="logo_pokemon_go"></a>
   </header>
   <div class="content container-fluid">
-    <div class="row">
-      <form class="row">
-        <div class="orderby">
-          <label> Ordenar por: </label>
-          <select id="pokemon-order" name="OS" class="type-select">
-            <option value="00">ID ASC</option>
-            <option value="01">ID DESC</option>
-            <option value="10">A-Z</option>
-            <option value="11">Z-A</option>
-          </select>
-        </div>
-      </form>
-      <div class="col-md-3 col-sm-2 col-xs-12">
+    <section>
+      <div class="col-md-3 col-sm-4 col-xs-12">
         <nav class="col-md-12">
           <div class="navegador">
             <div class="row">
-              <h4> Buscar por: </h4>
-            </div>
-            <div class="row">
-              <select id="pokemon-filters" class="type-select">
-                <option value="0">ID</option>
-                <option value="1">NOMBRE</option>
-                <option value="2">TIPO</option>
-                <option value="3">DEBILIDAD</option>
-              </select>
+              <h4>Por nombre o número: </h4>
             </div>
             <div class="row">
               <input id="input-search-text" type="text" class="type-input">
@@ -89,11 +70,24 @@
           </div>
         </nav>
       </div>
-      <section class="col-md-9 col-sm-10 col-xs-12">
-        <div id="pokemon-container" class="cards-container" style=" height: 500px;">
+    </section>
+    <section class="col-md-9 col-sm-8 col-xs-12">
+      <header>
+        <div>
+          <select id="pokemon-order" class="type-sort">
+            <option disabled selected>Ordenar por:</option>
+            <option value="00">ID ASC</option>
+            <option value="01">ID DESC</option>
+            <option value="10">A-Z</option>
+            <option value="11">Z-A</option>
+          </select>
         </div>
-      </section>
-    </div>
+      </header>
+      <div class="row">
+        <div id="pokemon-container" class="cards-container">
+        </div>
+      </div>
+    </section>
   </div>
   <footer>
   </footer>
