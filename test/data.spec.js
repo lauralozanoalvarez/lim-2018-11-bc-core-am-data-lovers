@@ -121,7 +121,7 @@ describe('data.searchByFilter', () => {
   });
 
   it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego, si elijo opc Tipo e inputText = Fuego', () => {
-    expect(window.data.searchByFilter(ouput5, 'Fuego', 2)).toEqual(ouput4);
+    expect(window.data.searchByFilter(ouput5, 'Fuego', 3)).toEqual(ouput4);
   });
 
   it('Debería retornar un array de objetos con el pokemon, si elijo opc ID y input=4', () => {
@@ -129,9 +129,6 @@ describe('data.searchByFilter', () => {
   });
   it('Debería retornar un array de objetos con el pokemon, si elijo opc Nombre e inputText = Charmander', () => {
     expect(window.data.searchByFilter(ouput5, 'Charmander', 1)).toEqual(ouput4);
-  });
-  it('Debería retornar un array de objetos con el pokemon, si elijo opc Debilidad e inputText = Agua', () => {
-    expect(window.data.searchByFilter(ouput5, 'Agua', 3)).toEqual(ouput4);
   });
 });
 
