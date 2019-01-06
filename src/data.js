@@ -55,6 +55,15 @@ const searchByFilter = (data, dataFilter, condition) => {
       element => element.name.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1);
     break;
   case 2:
+    arrFilter = dataCopy.filter(
+      element => element.egg.toLowerCase().indexOf(dataFilter.toLowerCase()) !== -1);
+    break;
+  case 3:
+    arrFilter = dataCopy.filter(
+      element => element.type.filter(
+        ele => ele.toLowerCase().indexOf(dataFilter.toLowerCase()) > -1).length > 0);
+    break;
+  case 4:
     saveObject = numFilter(dataCopy, dataFilter);
     arrFilter = Object.keys(saveObject[0]).map(element => { 
       if (element === 'prev_evolution') {
@@ -68,7 +77,7 @@ const searchByFilter = (data, dataFilter, condition) => {
       }
     }).filter(element => element);
     return arrFilter;
-  case 3:
+  case 5:
     saveObject = numFilter(dataCopy, dataFilter);
     arrFilter = Object.keys(saveObject[0]).map(element => {
       if (element === 'next_evolution') {

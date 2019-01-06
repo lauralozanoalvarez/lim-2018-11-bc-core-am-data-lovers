@@ -18,7 +18,7 @@ const evolutionFilter = (data, arrEvolution) => {
   let preEvolution = [];
   let nextEvolution = [];
 
-  preEvolution = window.data.searchByFilter(data, arrEvolution, 2);
+  preEvolution = window.data.searchByFilter(data, arrEvolution, 4);
   if (preEvolution) {
     preEvolution.map(element => {
       element.map(ele => {
@@ -32,7 +32,7 @@ const evolutionFilter = (data, arrEvolution) => {
       });
     });
   }
-  nextEvolution = window.data.searchByFilter(data, arrEvolution, 3);
+  nextEvolution = window.data.searchByFilter(data, arrEvolution, 5);
   if (nextEvolution) {
     nextEvolution.map(element => {
       element.map(ele => {
@@ -184,8 +184,8 @@ const Main = () => {
   
   btnSearch.addEventListener('click', () => {
     eggFilter.selectedIndex = 0;
-    typeFilter.selectedIndex = 0;
     sortBy.selectedIndex = 0;
+    typeFilter.selectedIndex = 0;
     dataFilter = inputSearchText.value;
     saveArrObjectFilter = listenFilterOrder(dataFilter, detectLetterNum(dataFilter));
     pokemonTemplateCards(saveArrObjectFilter);
@@ -193,16 +193,16 @@ const Main = () => {
 
   sortBy.addEventListener('change', () => {
     eggFilter.selectedIndex = 0;
-    typeFilter.selectedIndex = 0;
     pokemonTemplateCards(listenOrder(saveArrObjectFilter));
   });
   
   typeFilter.addEventListener('change', () => {
-    const typeofFilter = 'Type';
-    inputSearchText.value = '';
     sortBy.selectedIndex = 0;
-    const arrTemp = window.data.filterData(pokemonData, typeofFilter, typeFilter.value);
-    pokemonTemplateCards(window.data.filterData(arrTemp, typeofFilter, typeFilter.value));
+    eggFilter.selectedIndex = 0;
+    inputSearchText.value = '';
+    dataFilter = typeFilter.options[typeFilter.selectedIndex].value;
+    saveArrObjectFilter = listenOrder(listenFilter(dataFilter, 3));
+    pokemonTemplateCards(saveArrObjectFilter);
   });
 
   eggFilter.addEventListener('change', () => {
