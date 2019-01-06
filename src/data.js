@@ -21,10 +21,12 @@ function filterData(data, filterBy, condition) {
   return arrFilter;
 }
 
-const filterNum = (data, dataFilter) => {
+const numFilter = (data, dataFilter) => {
   let dataCopy = [];
   let arrFilter = [];
-  for (let i = 0; i < data.length; i++) dataCopy.push(Object.assign({}, data[i]));
+  data.forEach((element) => {
+    dataCopy.push(Object.assign({}, element));
+  });
   arrFilter = data.filter(
     element => element.num.indexOf(dataFilter) > -1);
   return arrFilter;
@@ -36,12 +38,13 @@ const searchByFilter = (data, dataFilter, condition) => {
   let arrFilter = [];
   let saveObject = [];
 
-  for (let i = 0; i < data.length; i++)
-    dataCopy.push(Object.assign({}, data[i]));
+  data.forEach((element) => {
+    dataCopy.push(Object.assign({}, element));
+  });
 
   if (dataFilter.length === 0)
     return dataCopy;
-
+  
   switch (condition) {
   case 0:
     arrFilter = data.filter(
@@ -52,37 +55,28 @@ const searchByFilter = (data, dataFilter, condition) => {
       element => element.name.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1);
     break;
   case 2:
-    arrFilter = dataCopy.filter(
-      element => element.type.filter(ele => ele.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1).length);
-    break;
-  case 3:
-    arrFilter = dataCopy.filter(
-      element => element.weaknesses.filter(ele => ele.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1).length);
-    break; 
-  case 4:
-    saveObject = filterNum(dataCopy, dataFilter);
+    saveObject = numFilter(dataCopy, dataFilter);
     arrFilter = Object.keys(saveObject[0]).map(element => { 
       if (element === 'prev_evolution') {
         return (saveObject[0].prev_evolution.map(element => {
           const newObject = {};
-          newObject.name = filterNum(dataCopy, element.num)[0].name;
-          newObject.img = filterNum(dataCopy, element.num)[0].img;
-          newObject.num = filterNum(dataCopy, element.num)[0].num;
+          newObject.name = numFilter(dataCopy, element.num)[0].name;
+          newObject.img = numFilter(dataCopy, element.num)[0].img;
+          newObject.num = numFilter(dataCopy, element.num)[0].num;
           return newObject;
         }));
       }
     }).filter(element => element);
     return arrFilter;
-    
-  case 5:
-    saveObject = filterNum(dataCopy, dataFilter);
+  case 3:
+    saveObject = numFilter(dataCopy, dataFilter);
     arrFilter = Object.keys(saveObject[0]).map(element => {
       if (element === 'next_evolution') {
         return (saveObject[0].next_evolution.map(element => {
           const newObject = {};
-          newObject.name = filterNum(dataCopy, element.num)[0].name;
-          newObject.img = filterNum(dataCopy, element.num)[0].img;
-          newObject.num = filterNum(dataCopy, element.num)[0].num;
+          newObject.name = numFilter(dataCopy, element.num)[0].name;
+          newObject.img = numFilter(dataCopy, element.num)[0].img;
+          newObject.num = numFilter(dataCopy, element.num)[0].num;
           return newObject;
         }));
       }
