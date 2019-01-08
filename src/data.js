@@ -27,8 +27,7 @@ const numFilter = (data, dataFilter) => {
   data.forEach((element) => {
     dataCopy.push(Object.assign({}, element));
   });
-  arrFilter = data.filter(
-    element => element.num.indexOf(dataFilter) > -1);
+  arrFilter = data.filter(element => element.num.indexOf(dataFilter) > -1);
   return arrFilter;
 }; 
 
@@ -43,7 +42,7 @@ const searchByFilter = (data, dataFilter, condition) => {
   });
 
   if (dataFilter.length === 0)
-    return dataCopy;
+    return data;
   
   switch (condition) {
   case 0:
@@ -65,32 +64,36 @@ const searchByFilter = (data, dataFilter, condition) => {
     break;
   case 4:
     saveObject = numFilter(dataCopy, dataFilter);
-    arrFilter = Object.keys(saveObject[0]).map(element => { 
-      if (element === 'prev_evolution') {
-        return (saveObject[0].prev_evolution.map(element => {
-          const newObject = {};
-          newObject.name = numFilter(dataCopy, element.num)[0].name;
-          newObject.img = numFilter(dataCopy, element.num)[0].img;
-          newObject.num = numFilter(dataCopy, element.num)[0].num;
-          return newObject;
-        }));
-      }
-    }).filter(element => element);
-    return arrFilter;
+    if (saveObject.length !== 0) {
+      arrFilter = Object.keys(saveObject[0]).map(element => {
+        if (element === 'prev_evolution') { 
+          return (saveObject[0].prev_evolution.map(element => {
+            const newObject = {};
+            newObject.name = numFilter(dataCopy, element.num)[0].name;
+            newObject.num = numFilter(dataCopy, element.num)[0].num;
+            newObject.img = numFilter(dataCopy, element.num)[0].img;
+            return newObject;
+          }));
+        }
+      }).filter(element => element);
+    }
+    break;
   case 5:
     saveObject = numFilter(dataCopy, dataFilter);
-    arrFilter = Object.keys(saveObject[0]).map(element => {
-      if (element === 'next_evolution') {
-        return (saveObject[0].next_evolution.map(element => {
-          const newObject = {};
-          newObject.name = numFilter(dataCopy, element.num)[0].name;
-          newObject.img = numFilter(dataCopy, element.num)[0].img;
-          newObject.num = numFilter(dataCopy, element.num)[0].num;
-          return newObject;
-        }));
-      }
-    }).filter(element => element);
-    return arrFilter;
+    if (saveObject.length !== 0) {
+      arrFilter = Object.keys(saveObject[0]).map(element => {
+        if (element === 'next_evolution') {
+          return (saveObject[0].next_evolution.map(element => {
+            const newObject = {};
+            newObject.num = numFilter(dataCopy, element.num)[0].num;
+            newObject.name = numFilter(dataCopy, element.num)[0].name;
+            newObject.img = numFilter(dataCopy, element.num)[0].img;
+            return newObject;
+          }));
+        }
+      }).filter(element => element);
+    }
+    break;
   default: 
   }
   return arrFilter;
@@ -142,4 +145,5 @@ window.data = {
   sortData,
   filterData,
   stats,
+  numFilter
 };
