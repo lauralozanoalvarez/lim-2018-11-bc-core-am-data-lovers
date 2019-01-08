@@ -13,8 +13,8 @@ const POKEMON = [
     'next_evolution': [{'num': '002', 'name': 'Ivysaur'}, {'num': '003', 'name': 'Venusaur' }]},
 
   { 'id': 2, 'num': '002', 'name': 'Ivysaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/002.png',
-    'prev_evolution': [{ 'num': '001', 'name': 'Bulbasaur'}],
-    'next_evolution': [{'num': '003', 'name': 'Venusaur' }]},
+    'prev_evolution': { 'num': '001', 'name': 'Bulbasaur'},
+    'next_evolution': {'num': '003', 'name': 'Venusaur' }},
 
   { 'id': 3, 'num': '003', 'name': 'Venusaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/003.png',
     'prev_evolution': [{ 'num': '001', 'name': 'Bulbasaur' }, { 'num': '002', 'name': 'Ivysaur' }]},
@@ -160,10 +160,6 @@ describe('data.filterData', () => {
 describe('data.searchByFilter', () => {
   it('Debería ser una función', () => {
     expect(typeof window.data.searchByFilter).toBe('function');
-  });
-
-  it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego, input = Fuego', () => {
-    expect(window.data.searchByFilter(output5, 'Fuego', 3)).toEqual(output4);
   });
 
   it('Debería retornar a Charmander, si busco por ID input = 004', () => {

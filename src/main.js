@@ -12,7 +12,7 @@ const filterInArray = (arr) => {
     return `<label class="badge-${element}">${element}</label>`;
   }).join(' ');
 };
-
+  
 const evolutionFilter = (data, arrEvolution) => {
   let stringLabel = [];
   let preEvolution = [];
@@ -198,14 +198,13 @@ const Main = () => {
     eggFilter.selectedIndex = 0;
     pokemonTemplateCards(listenOrder(saveArrObjectFilter));
   });
-  
+
   typeFilter.addEventListener('change', () => {
-    sortBy.selectedIndex = 0;
-    eggFilter.selectedIndex = 0;
+    const typeofFilter = 'Type';
     inputSearchText.value = '';
-    dataFilter = typeFilter.options[typeFilter.selectedIndex].value;
-    saveArrObjectFilter = listenOrder(listenFilter(dataFilter, 3));
-    pokemonTemplateCards(saveArrObjectFilter);
+    sortBy.selectedIndex = 0;
+    const arrTemp = window.data.filterData(pokemonData, typeofFilter, typeFilter.value);
+    pokemonTemplateCards(window.data.filterData(arrTemp, 'Type', typeFilter.value));
   });
 
   eggFilter.addEventListener('change', () => {

@@ -22,12 +22,8 @@ function filterData(data, filterBy, condition) {
 }
 
 const numFilter = (data, dataFilter) => {
-  let dataCopy = [];
   let arrFilter = [];
-  data.forEach((element) => {
-    dataCopy.push(Object.assign({}, element));
-  });
-  arrFilter = data.filter(element => element.num.indexOf(dataFilter) > -1);
+  arrFilter = data.filter(element => element.num.indexOf(dataFilter) !== -1);
   return arrFilter;
 }; 
 
@@ -47,57 +43,45 @@ const searchByFilter = (data, dataFilter, condition) => {
   switch (condition) {
   case 0:
     arrFilter = data.filter(
-      element => element.num.indexOf(dataFilter) > -1);
+      element => element.num.indexOf(dataFilter) !== -1);
     break;
   case 1:
     arrFilter = dataCopy.filter(
       element => element.name.toUpperCase().indexOf(dataFilter.toUpperCase()) !== -1);
     break;
-  case 2:
-    arrFilter = dataCopy.filter(
-      element => element.egg.toLowerCase().indexOf(dataFilter.toLowerCase()) !== -1);
-    break;
-  case 3:
-    arrFilter = dataCopy.filter(
-      element => element.type.filter(
-        ele => ele.toLowerCase().indexOf(dataFilter.toLowerCase()) > -1).length > 0);
-    break;
   case 4:
     saveObject = numFilter(dataCopy, dataFilter);
-    if (saveObject.length !== 0) {
-      arrFilter = Object.keys(saveObject[0]).map(element => { 
-        if (element === 'prev_evolution') { 
-          return (saveObject[0].prev_evolution.map(element => {
-            const newObject = {};
-            newObject.name = numFilter(dataCopy, element.num)[0].name;
-            newObject.num = numFilter(dataCopy, element.num)[0].num;
-            newObject.img = numFilter(dataCopy, element.num)[0].img;
-            return newObject;
-          }));
-        }
-      }).filter(element => element);
-    }
+    arrFilter = (saveObject).map(element => { 
+      if (element.hasOwnProperty('prev_evolution')) { 
+        return (element.prev_evolution.map(element => { 
+          const newObject = {};
+          newObject.name = element.name;
+          newObject.num = element.num;
+          newObject.img = numFilter(dataCopy, element.num)[0].img; 
+          return newObject; 
+        }));
+      }
+    }).filter(element => element);
     break;
   case 5:
     saveObject = numFilter(dataCopy, dataFilter);
-    if (saveObject.length !== 0) {
-      arrFilter = Object.keys(saveObject[0]).map(element => {
-        if (element === 'next_evolution') {
-          return (saveObject[0].next_evolution.map(element => {
-            const newObject = {};
-            newObject.num = numFilter(dataCopy, element.num)[0].num;
-            newObject.name = numFilter(dataCopy, element.num)[0].name;
-            newObject.img = numFilter(dataCopy, element.num)[0].img; 
-            return newObject; 
-          })); 
-        }
-      }).filter(element => element);
-    }
+    arrFilter = (saveObject).map(element => {
+      if (element.hasOwnProperty('next_evolution')) {
+        return (element.next_evolution.map(element => {
+          const newObject = {};
+          newObject.num = element.num;
+          newObject.name = element.name; 
+          newObject.img = numFilter(dataCopy, element.num)[0].img; 
+          return newObject; 
+        })); 
+      }
+    }).filter(element => element);
     break;
   default: 
   }
   return arrFilter;
 };
+
 
 // Ordenar
 const sortData = (data, sortBy, sortOrder) => {
@@ -130,7 +114,6 @@ const stats = (data, condition) => {
     const arrFilterPokemonType = data.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));
     const cantXType = arrFilterPokemonType.length; 
     const percentage = ((cantXType / 151) * 100);
-    
     arrPorcentaje.push(percentage);  
   }
   return arrPorcentaje; 
