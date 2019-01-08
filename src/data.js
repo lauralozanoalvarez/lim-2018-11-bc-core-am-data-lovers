@@ -127,7 +127,7 @@ const sortData = (data, sortBy, sortOrder) => {
 const stats = (data, condition) => {
   let arrPorcentaje = [];
   for (let i = 0; i < condition.length; i++) { 
-    const arrFilterPokemonType = data.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));   console.log(arrFilterPokemonType);
+    const arrFilterPokemonType = data.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));
     const cantXType = arrFilterPokemonType.length; 
     const percentage = ((cantXType / 151) * 100);
     
