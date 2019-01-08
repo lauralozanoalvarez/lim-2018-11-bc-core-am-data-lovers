@@ -124,25 +124,28 @@ document.getElementById('button-percentage').addEventListener('click', () => {
   function drawChart() {
     const data = google.visualization.arrayToDataTable([
       ['Tipo de Pokémon', '% del total', {role: 'style'}],
-      ['Agua', arrPercentage[0], 'color: #414449'],
-      ['Hierba', arrPercentage[1], 'color: #558720'],
-      ['Tierra', arrPercentage[2], 'color: #671502'],
-      ['Hielo', arrPercentage[3], 'color: #6c72f3'], 
-      ['Bicho', arrPercentage[4], 'color: #16d45d'],
-      ['Psíquico', arrPercentage[5], 'color: #af5ed9'],
-      ['Fantasma', arrPercentage[6], 'color: #612baa'],
-      ['Dragón', arrPercentage[7], 'color: #612baa'],
-      ['Veneno', arrPercentage[8], 'color: #4d215e'],
-      ['Lucha', arrPercentage[9], 'color: #fc1f1f'],
+      ['Agua', arrPercentage[0], 'color: #4C95F2'],
+      ['Hierba', arrPercentage[1], 'color: #59E44E'],
+      ['Tierra', arrPercentage[2], 'color: #C57242'],
+      ['Hielo', arrPercentage[3], 'color: #29CDD7'], 
+      ['Bicho', arrPercentage[4], 'color: #61B932'],
+      ['Psíquico', arrPercentage[5], 'color: #EE4E92'],
+      ['Fantasma', arrPercentage[6], 'color: #9E37AF'],
+      ['Dragón', arrPercentage[7], 'color: #FF9814'],
+      ['Veneno', arrPercentage[8], 'color: #CD1BEC'],
+      ['Lucha', arrPercentage[9], 'color: #F0500A'],
       ['Fuego', arrPercentage[10], 'color: #ff8400'],
-      ['Volador', arrPercentage[11], 'color: #45a4a3'],
-      ['Roca', arrPercentage[12], 'color: #a2def4'],
-      ['Eléctrico', arrPercentage[13], 'color: #faf329'],
-      ['Normal', arrPercentage[14], 'color: #a8aaae']  
+      ['Volador', arrPercentage[11], 'color: #82CAC9'],
+      ['Roca', arrPercentage[12], 'color: #CA7D0D'],
+      ['Eléctrico', arrPercentage[13], 'color: #f4f425'],
+      ['Normal', arrPercentage[14], 'color: #A4A48E']  
     ]);
 
     const options = {
-      title: 'Porcentaje de Pokemones por Tipo'
+      title: 'Porcentaje de Pokemones por Tipo',
+      width: 1350,
+      colors: ['#4C95F2', '#59E44E', '#C57242', '#29CDD7', '#61B932', 'EE4E92', '9E37AF', 'FF9814', 'CD1BEC', 'F0500A', 'ff8400', '82CAC9', 'CA7D0D', 'f4f425', 'A4A48E' ],
+      is3D: true
     };
 
     const chart = new google.visualization.PieChart(document.getElementById('pokemon-container'));

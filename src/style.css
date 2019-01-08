@@ -323,8 +323,11 @@ nav {
 }
 
 .min-heigth-table {
-	max-height: 65vh;
-	width: 100%;
+	width: 98%;
+  text-align: center;
+  margin-left: 18px;
+	padding: 20px;
+  height: 700px;
 }
 
 label {
