@@ -184,7 +184,7 @@ describe('data.stats', () => {
   it('Debería ser una función', () => {
     expect(typeof window.data.stats).toBe('function');
   });
-  it('Debería retornar la cantidad de pokemones de tipo Dragon', () => {
-    expect(window.data.stats(inputStats, inputStats2)).toEqual([3]);
+  it('Debería retornar el % de pokemones de tipo Dragon', () => {
+    expect(window.data.stats(inputStats, inputStats2)).toEqual([1.9867549668874174]);
   });
 });
