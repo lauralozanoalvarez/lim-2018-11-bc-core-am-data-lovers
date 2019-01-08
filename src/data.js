@@ -65,7 +65,7 @@ const searchByFilter = (data, dataFilter, condition) => {
   case 4:
     saveObject = numFilter(dataCopy, dataFilter);
     if (saveObject.length !== 0) {
-      arrFilter = Object.keys(saveObject[0]).map(element => {
+      arrFilter = Object.keys(saveObject[0]).map(element => { 
         if (element === 'prev_evolution') { 
           return (saveObject[0].prev_evolution.map(element => {
             const newObject = {};
@@ -87,9 +87,9 @@ const searchByFilter = (data, dataFilter, condition) => {
             const newObject = {};
             newObject.num = numFilter(dataCopy, element.num)[0].num;
             newObject.name = numFilter(dataCopy, element.num)[0].name;
-            newObject.img = numFilter(dataCopy, element.num)[0].img;
-            return newObject;
-          }));
+            newObject.img = numFilter(dataCopy, element.num)[0].img; 
+            return newObject; 
+          })); 
         }
       }).filter(element => element);
     }
@@ -124,18 +124,14 @@ const sortData = (data, sortBy, sortOrder) => {
   return arrFilter ;
 };
 
-// % de Pokemon x tipo
-/* const cantXType = arrFilterPokemonType.length;
-   const porcentaje = ((cantXType / 151) * 100);
-   arrPorcentaje.push(porcentaje); 
-*/
-
 const stats = (data, condition) => {
   let arrPorcentaje = [];
   for (let i = 0; i < condition.length; i++) { 
-    const arrFilterPokemonType = data.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));    
+    const arrFilterPokemonType = data.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));   console.log(arrFilterPokemonType);
     const cantXType = arrFilterPokemonType.length; 
-    arrPorcentaje.push(cantXType);  
+    const percentage = ((cantXType / 151) * 100);
+    
+    arrPorcentaje.push(percentage);  
   }
   return arrPorcentaje; 
 };
