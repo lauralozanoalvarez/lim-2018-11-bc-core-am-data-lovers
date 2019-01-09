@@ -5,11 +5,6 @@ const typeFilter = document.getElementById('type-filter');
 const pokemonData = window.POKEMON.pokemon;
 const arrkeys = Object.values(window.POKEMON.pokemon);
 
-const filterInArray = (arr) => {
-  return arr.map(element => {
-    return `<label class="badge-${element}">${element}</label>`;
-  }).join(' ');
-};
 
 const pokemonTemplateCards = (pokemones) => {
   let templateCards = [];
@@ -24,7 +19,7 @@ const pokemonTemplateCards = (pokemones) => {
             <img class="post-image" src="${element.img}" />
             <h3 class="post-title">${element.name}</h3>
             <p class="post-description">#${element.num} </p>
-            <p class="type-labels">${filterInArray(element.type)}</p>
+            ${element.type.map(strType => `<label class="badge-${strType}">${strType}</label>`).join(' ')}
           </div>
         </div>
       </a>
@@ -45,15 +40,15 @@ const pokemonTemplateCards = (pokemones) => {
               </article>
               <article class="mb-2">
                 <h5 class="mb-0">Tipo:</h5>
-                <p> ${filterInArray(element.type)}</p>
-              </article>
+                ${element.type.map(strType => `<label class="badge-${strType}">${strType}</label>`).join(' ')}
+                </article>
               <article class="mb-2">
                 <h5>Nombre de caramelos:</h5>
                 <span class="text-size">${element.candy}</span>
               </article>
               <article class="mb-2">
                 <h5 class="mb-0">Debilidades:</h5>
-                <p> ${filterInArray(element.weaknesses)}</p>
+                ${element.weaknesses.map(strType => `<label class="badge-${strType}">${strType}</label>`).join(' ')}
               </article>
           </section>
           <section class="text-center">
