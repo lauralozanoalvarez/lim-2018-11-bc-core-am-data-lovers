@@ -20,20 +20,11 @@
         <nav class="col-md-12">
           <div class="navegador">
             <div class="row">
-              <h4>Por nombre o número: </h4>
-            </div>
-            <div class="row">
-              <input id="input-search-text" type="text" class="type-input">
-            </div>
-            <div class="row">
-              <button id="btn-search" type="button" class="type-button">Buscar</button>
-            </div>
-            <div class="row">
               <h4>Filtro de Pokemons</h4>
             </div>
             <div class="row">
               <select class="type-select" id="type-filter">
-                <option value="all">Por tipo</option>
+                <option disabled selected>Por tipo:</option>
                 <option value="Agua">Agua</option>
                 <option value="Hierba">Hierba</option>
                 <option value="Veneno">Veneno</option>
@@ -53,7 +44,7 @@
             </div>
             <div class="row">
               <select class="type-select" id="egg-filter">
-                <option value="all">Por Huevo</option>
+                <option disabled selected>Por huevo:</option>
                 <option value="Not in Eggs">No en huevo</option>
                 <option value="2 km">Huevo 2 km</option>
                 <option value="5 km">Huevo 5 km</option>
@@ -75,10 +66,10 @@
         <div>
           <select id="pokemon-order" class="type-sort">
             <option disabled selected>Ordenar por:</option>
-            <option value="00">ID ASC</option>
-            <option value="01">ID DESC</option>
-            <option value="10">A-Z</option>
-            <option value="11">Z-A</option>
+            <option value="name-asc">ID ASC</option>
+            <option value="name-desc">ID DESC</option>
+            <option value="id-asc">A-Z</option>
+            <option value="id-desc">Z-A</option>
           </select>
         </div>
       </header>

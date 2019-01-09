@@ -488,6 +488,10 @@ body {
   margin: 0 auto;
 }
 
+.min-heigth-table {
+  height: 500px;
+}
+
 header img {
 	margin: 15px 0px 0px;
 	width: 26%;
