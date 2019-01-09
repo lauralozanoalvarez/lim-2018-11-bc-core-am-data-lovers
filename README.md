@@ -13,9 +13,11 @@ Pokémon GO nació de una broma de día de los inocentes por Pokémon Company co
 ![Image of Pokémon GO gameplay](/src/img/img-readme/gameplay.jpg)
 
 ## Índice.
-*
-*
-*
+* Definición del producto.
+* Entrevistas.
+* Historias de usuario.
+* Proceso del producto.
+* Test de usabilidad.
 
 ## Definición del producto.
 Si bien Pokémon GO es jugado por personas de diferentes edades, se debe reconocer que el juego es más aprovechado por jovenes adultos (20 años a más) puesto a que son ellos quienes crecieron viendo el anime, siguiendo las películas y jugando la saga de videojuegos de Pokémon. Entonces, podemos decir que es este grupo de individuos quienes entienden el verdadero significado de Pokémon GO, que es convertirse en un gran maestro Pokémon.
