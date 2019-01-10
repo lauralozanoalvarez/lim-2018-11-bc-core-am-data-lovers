@@ -118,24 +118,71 @@ Se elaboró un prototipo práctico, se tuvo como finalidad cumplir con los sigui
 - Indicaciones de Uso
 - Responsive
 
-- El primer prototipado en baja fidelidad pensó en una muy corta bienvenida y de frente pasar al dashboard con sus funcionalidades.
+El primer prototipado en baja fidelidad pensó en una muy corta bienvenida y de frente pasar al dashboard con sus funcionalidades.
 
-![Image of the very first prototype](/src/img/img-readme/primerproto.png)
+Se fue iterando en los siguientes prototipados de acuerdo a los test de usabilidad que se iban realizando, los cuales se decribirán líneas abajo. Como se puede observar varia en que se añada el botón flotante para los filtros, un buscador, íconos descriptivos, y estructura de la interfaz e información.
 
-- Se fue iterando en los siguientes prototipados de acuerdo a los test de usabilidad que se iban realizando, los cuales se decribirán líneas abajo. Como se puede observar varia en que se añada el botón flotante para los filtros, un buscador, íconos descriptivos, y estructura de la interfaz e información.
+Primer Prototipo:
 
-La planificación según los sprints fluyeron más de acuerdo al avance del producto que a metas fijas en sí. Cada semana se testeaba al menos una vez, lo que nos arrojaban pequeños cambios en la interfaz para una mejor experiencia y/o se descubrían bugs que limitaban al usuario en su búsqueda, y según cada feedback se buscaba mejorar el producto.
+![Primer Prototipo](/src/img/img-readme/primerproto.png)
+
+Segundo Prototipo (Escritorio): 
+
+![Segundo Prototipo Escritorio](/src/img/img-readme/proto2.jpg)
+
+Segundo Prototipo (Movil):
+
+![Segundo Prototipo Movil](/src/img/img-readme/proto3.jpg)
+
+Tercer Prototipo (Escritorio):
+
+![Tercer Prototipo Escritorio](/src/img/img-readme/proto4.jpg)
+
+Tercer Prototipo Movil:
+
+![Tercer Prototipo Movil](/src/img/img-readme/proto5.jpg)
+
+#### Prototipo de Alta Fidelidad:
+
+El prototipado de alta fidelidad fue hecho en figma. Cuenta con un largo proceso de cambios gracias al feedback recibido, pero "e"n los detalles se encuentran las grandes maravillas" y gracias a ello creemos tener una muy bonita interfaz que satisfará al usuario en lo medido.
+
+Pantalla de Bienvenida
+
+![Alta Fidelidad - Pantalla de bienvenida](/src/img/img-readme/Desktop.png)
+
+Pantalla General:
+
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/pantalla_general.png)
+
+Pantalla Filtrar por:
+
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/pantalla_filtrar.png)
+
+Pantalla Filtrar por tipo (Agua): 
+
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/filtrar_huevos.png)
+
+Pantalla Filtrar por Huevo:
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/filtrar_huevos.png)
+
+
+Pantalla Filtro de Huevo + Tipo Agua aplicado:
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/ha.png)
+
+
+Pantalla Ordenar:
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/sort.png)
+
+Link to ZEPLIT: [Pokedash](https://zpl.io/aByZ300)
+
+### Planificación:
+
+La planificación según los sprints fluyeron más de acuerdo al avance del producto que a metas fijas en sí. Cada semana se testeaba al menos una vez,lo que nos arrojaban pequeños cambios en la interfaz para una mejor experiencia y/o se descubrían bugs que limitaban al usuario en su búsqueda,y según cada feedback se buscaba mejorar el producto.
 
 ![Image of the us stories](/src/img/img-readme/us-stories.JPEG)
 
-
-![Image of the us stories](/src/img/img-readme/us-stories2.jpg)
-![Image of the us stories](/src/img/img-readme/us-stories3.jpg)
+![Image of the us stories](/src/img/img-readme/us-stories2.JPEG)
 
 
--El prototipado de alta fidelidad fue hecho en figma. Cuenta con un largo proceso de cambios gracias al feedback recibido, pero "e"n los detalles se encuentran las grandes maravillas" y gracias a ello creemos tener una muy bonita interfaz que satisfará al usuario en lo medido.
-
-![Image of the us stories](/src/img/img-readme/Desktop.JPG)
-![Image of the us stories](/src/img/img-readme/ProtoHigh.jpg)
-
-Link to ZEPLIT: [Pokedash](https://zpl.io/aByZ300)
+### Test de usabilidad:
+- 
