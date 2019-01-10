@@ -173,6 +173,10 @@ Pantalla Filtro de Huevo + Tipo Agua aplicado:
 Pantalla Ordenar:
 ![Alta Fidelidad - Pantalla general](/src/img/img-readme/sort.png)
 
+Pantalla Ventana modal:
+
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/modal.png)
+
 Link to ZEPLIT: [Pokedash](https://zpl.io/aByZ300)
 
 ### Planificación:
@@ -185,4 +189,14 @@ La planificación según los sprints fluyeron más de acuerdo al avance del prod
 
 
 ### Test de usabilidad:
-- 
+- En el primer prototipo se tenía una pantalla de inicio y dos botones de acceso para Pókedex y Estadistica, el usuario surgirió que la imagen que represente ese botón sea descripitiva, se cambió.
+
+- En el primer prototipo los filtros eran estáticos, los usuarios sugirieron que estén dentro de un botón flotante y sean dinámicos, es decir se relacionen tanto Filtro por Tipo y Huevo.
+
+- El usuario sugirió que al aplicar el filtro se coloque una etiqueta que lo represente en la parte superior para tenerla como guía o referencia.
+
+- En el primer prototipo, no se mostraba las etiquetas de Tipo en las Cards, el usuario sugirió que se mostrasen y sean descriptivas y contengan un color que las represente.
+
+- El botón de ordenar se encontraba en la parte superior izquierda, el usuario mencionó que se colocara al lado derecho, para una mejor estructura.
+
+- Al inicio, no se tenía pensada la idea de colocar una ventana Modal, el usuario sugirió que al hacer click en una card, muestre información más a detalle del pokémon que selecciona.
