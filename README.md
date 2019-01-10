@@ -160,7 +160,7 @@ Pantalla Filtrar por:
 
 Pantalla Filtrar por tipo (Agua): 
 
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/filtrar_huevos.png)
+![Alta Fidelidad - Pantalla general](/src/img/img-readme/filtro_agua.png)
 
 Pantalla Filtrar por Huevo:
 ![Alta Fidelidad - Pantalla general](/src/img/img-readme/filtrar_huevos.png)
