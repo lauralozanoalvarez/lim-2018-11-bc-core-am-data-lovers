@@ -11,7 +11,8 @@
 
 # POKÉMON GO.
 
-![Image of the game](/src/img/img-readme/pokemon-go-gameplay.jpg)
+![Image of the game](/src/img/img-readme/pokemon-go-app.png)
+
 
 Pokémon GO nació de una broma de día de los inocentes por Pokémon Company con ayuda de Google Maps y se hizo realidad gracias a la gran acogida del famoso Pokémon Challenge, que hablaba de poder encontrar los diferentes 720 pokémon según el bioma que se recorra con ayuda del Maps de Google. Y de esto se trató en adelante el juego: "El videojuego requiere que el jugador recorra las calles de su ciudad para descubrir toda clase de Pokémon, cuyas distintas especies aparecen dependiendo de la zona visitada. Las calles del mundo real aparecen representadas en Pokémon GO en forma de mapa, que muestra el lugar donde se encuentra el jugador. Además, los mapas de Pokémon GO integran diferentes Pokeparadas (Pokéstops) que permiten conocer museos, instalaciones artísticas, monumentos y lugares históricos, entre otros. Cuando el jugador o entrenador Pokémon enciende la cámara de su teléfono, se puede encontrar con una imagen virtual de un Pokémon, superpuesta sobre la escena real tras la lente. Para capturar las criaturas, se utilizan pokebolas. Esta es una de las características por la que se considera que el juego se basa en la realidad aumentada, ya que permite ver la realidad mezclada con elementos de ficción a través de un teléfono inteligente."
 
@@ -179,10 +180,6 @@ Link to ZEPLIT: [Pokedash](https://zpl.io/aByZ300)
 ### Planificación:
 
 La planificación según los sprints fluyeron más de acuerdo al avance del producto que a metas fijas en sí. Cada semana se testeaba al menos una vez,lo que nos arrojaban pequeños cambios en la interfaz para una mejor experiencia y/o se descubrían bugs que limitaban al usuario en su búsqueda,y según cada feedback se buscaba mejorar el producto.
-
-![Image of the us stories](/src/img/img-readme/us-stories.JPEG)
-
-![Image of the us stories](/src/img/img-readme/us-stories2.JPEG)
 
 
 ### Test de usabilidad:
