@@ -11,11 +11,9 @@
 
 # POKÉMON GO.
 
-![Image of the game](/src/img/img-readme/pokemonGo-app.jpg)
+![Image of the game](/src/img/img-readme/pokemon-go-gameplay.jpg)
 
 Pokémon GO nació de una broma de día de los inocentes por Pokémon Company con ayuda de Google Maps y se hizo realidad gracias a la gran acogida del famoso Pokémon Challenge, que hablaba de poder encontrar los diferentes 720 pokémon según el bioma que se recorra con ayuda del Maps de Google. Y de esto se trató en adelante el juego: "El videojuego requiere que el jugador recorra las calles de su ciudad para descubrir toda clase de Pokémon, cuyas distintas especies aparecen dependiendo de la zona visitada. Las calles del mundo real aparecen representadas en Pokémon GO en forma de mapa, que muestra el lugar donde se encuentra el jugador. Además, los mapas de Pokémon GO integran diferentes Pokeparadas (Pokéstops) que permiten conocer museos, instalaciones artísticas, monumentos y lugares históricos, entre otros. Cuando el jugador o entrenador Pokémon enciende la cámara de su teléfono, se puede encontrar con una imagen virtual de un Pokémon, superpuesta sobre la escena real tras la lente. Para capturar las criaturas, se utilizan pokebolas. Esta es una de las características por la que se considera que el juego se basa en la realidad aumentada, ya que permite ver la realidad mezclada con elementos de ficción a través de un teléfono inteligente."
-
-![Image of Pokémon GO gameplay](/src/img/img-readme/gameplay.jpg)
 
 
 ## Definición del producto.
@@ -27,12 +25,9 @@ Para diseñar esta web nos basamos en las entrevistas que realizamos a jugadores
 
 Sus respuestas indicaron que necesitaban ver la información de pokemones presentada de cierta manera y sobre todo algunas características que ellos consideran más importantes para jugar mejor lo que se tradujo en nuestras historias de usuario.
 
-
-![Image of players](/src/img/img-readme/players.jpg)
-
 Para esta definición del producto se resuelven las siguientes preguntas:
 1. ¿Quiénes son los principales usuarios de Pokedash? Principalmente, usuarios nuevos del juego Pokemon Go.
-2. ¿Cuáles son los objetivos del usuario con respecto al producto? Conocer el detalle de cada pokémon para tomar desiciones estratégicas que optimicen su juego.
+2. ¿Cuáles son los objetivos del usuario con respecto al producto? Conocer el detalle de cada pokémon para tomar decisiones estratégicas que optimicen su juego.
 3. ¿Cuáles son los datos más importantes que debe mostrar en la interfaz y porqué? Debería poder visualizar cada uno de los pokemon y mostrar sus detalles como el nombre, su tipo, su huevo, sus debilidades, id, caramelos, entre otros. Además de filtro de tipo y huevos.   
 4. ¿En qué momento o circunstancia se ve útil Pokedash? Cuando el usuario nuevo haya atrapado el pokemon, querrá saber más información del mismo y en pokedash podrá obtenerlo. Además, en la intefaz encontrará un filtro de tipo que le servirá cuando quiera conocer los posibles pokemon según tipo; y otro filtro que le ayude a saber qué pokemon puede eclosionar según el kilometraje del huevo. 
 5. ¿Cómo resuelve, el producto, el problema del usuario? Pokedash es ese producto auxiliar de uno de los juegos estrellas que ayudará a cualquier jugador novato en convertirse en un gran maestro Pokémon.
@@ -62,6 +57,7 @@ Como: Jugador principainte de Pokémon GO
 Quiero: Filtrar por tipo
 Para: Tener en cuenta su clasificación y conocer qué posibles Pokémon puedo encontrar según el bioma y clima. 
 ```
+
 ```plain
 Historia 3:
 
@@ -82,7 +78,7 @@ Para Encontrar a mi Pokémon rápidamente.
 
 ### Descubrimiento e investigación
 
-![Descubrimiento e investigación](/src/img/img-readme/proceso_diseño_1.png)
+![Descubrimiento e investigación](/src/img/img-readme/pdiseño_descubrimiento_investigacion.png)
 
 Como muchos de nosotros seguramente ya sabemos, Pokémon GO fue un éxito sin precedentes durante su lanzamiento debido a que reunía la nostalgia de los fans de la franquicia en una jugabilidad sin precedentes a un nivel que solo Nintendo podría patrocinar.
 
@@ -93,17 +89,18 @@ Desafortunadamente a pesar de sus millones de descargas, el 96% de los jugadores
 Al tener esta funcionabilidad ya implementada actualmente, surge la necesidad de un usuario antiguo en re-conectarse o re-engancharse con el juego, pero se siente perdido por el tiempo que ha transcurrido sin usarlo, o de un jugador nuevo de Pokémon Go, el cual no sabe cómo hacer y optimizar el tiempo invertido en entender y optimizar su juego. 
 
 ### Sintesis y definición
-![Descubrimiento e investigación](/src/img/img-readme/proceso_diseño_1.png)
+![Sintesis y definición](/src/img/img-readme/pdiseño_sintesis_definicion.png)
+
 ### Problema a resolver: El poco conocimiento de Pokémon GO en algunos usuarios nuevos y antiguos y su relación con la falta de estrategias que optimicen su juego.
 
 En esta fase usamos los datos coleccionados en la fase de investigación y descubrimiento buscando tendencias e insights valiosos para el desarrollo de Pokedash. Entendiendo los deseos y necesidades de nuestros usuarios, se desarrolló una plataforma simple y didactica en la cual muestre al usuario de manera ordenada, información más relevante acerca de cada Pokémon, además se colocaron filtros por Tipo y Huevo, la cual permita brindarle información concisa y relevante a nuestro usuario ayudando a mejorar su estrategia y habilidad en el juego.
 
 ### Ideación
-![Ideación](/src/img/img-readme/ideación.png)
+![Ideación](/src/img/img-readme/pdiseño_ideacion.png)
 ¡Se utilizaron sketches, y fluyeron las ideas! Se tuvo como propósito construir una web con diseño práctico, interfaz didáctica, fácil de usar y amigable, que permita al usuario acceder a la información relevante de una manera sencilla y sobre todo que cumpla con la funcionalidad y objetivo deseado, es decir, que ayude o contribuya a mejorar sus técnicas en el juego.
 
 ### Prototipado
-![Prototipado](/src/img/img-readme/protitpado.png)
+![Prototipado](/src/img/img-readme/pdiseño_prototipado.png)
 
 Se elaboró un prototipo práctico, se tuvo como finalidad cumplir con los siguientes objetivos:
 
