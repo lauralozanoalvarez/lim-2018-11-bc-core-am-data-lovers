@@ -11,7 +11,7 @@
 
 # POKÉMON GO.
 
-![Image of the game](/src/img/img-readme/pokemon-go-app.png)
+![Image of the game](/src/img/img-readme/pokemon-go-gameplay.png)
 
 
 Pokémon GO nació de una broma de día de los inocentes por Pokémon Company con ayuda de Google Maps y se hizo realidad gracias a la gran acogida del famoso Pokémon Challenge, que hablaba de poder encontrar los diferentes 720 pokémon según el bioma que se recorra con ayuda del Maps de Google. Y de esto se trató en adelante el juego: "El videojuego requiere que el jugador recorra las calles de su ciudad para descubrir toda clase de Pokémon, cuyas distintas especies aparecen dependiendo de la zona visitada. Las calles del mundo real aparecen representadas en Pokémon GO en forma de mapa, que muestra el lugar donde se encuentra el jugador. Además, los mapas de Pokémon GO integran diferentes Pokeparadas (Pokéstops) que permiten conocer museos, instalaciones artísticas, monumentos y lugares históricos, entre otros. Cuando el jugador o entrenador Pokémon enciende la cámara de su teléfono, se puede encontrar con una imagen virtual de un Pokémon, superpuesta sobre la escena real tras la lente. Para capturar las criaturas, se utilizan pokebolas. Esta es una de las características por la que se considera que el juego se basa en la realidad aumentada, ya que permite ver la realidad mezclada con elementos de ficción a través de un teléfono inteligente."
@@ -124,58 +124,35 @@ Primer Prototipo:
 
 ![Primer Prototipo](/src/img/img-readme/primerproto.png)
 
-Segundo Prototipo (Escritorio): 
-
-![Segundo Prototipo Escritorio](/src/img/img-readme/proto2.jpg)
-
-Segundo Prototipo (Movil):
-
-![Segundo Prototipo Movil](/src/img/img-readme/proto3.jpg)
-
-Tercer Prototipo (Escritorio):
-
-![Tercer Prototipo Escritorio](/src/img/img-readme/proto4.jpg)
-
-Tercer Prototipo Movil:
-
-![Tercer Prototipo Movil](/src/img/img-readme/proto5.jpg)
-
 #### Prototipo de Alta Fidelidad:
 
 El prototipado de alta fidelidad fue hecho en figma. Cuenta con un largo proceso de cambios gracias al feedback recibido, pero "e"n los detalles se encuentran las grandes maravillas" y gracias a ello creemos tener una muy bonita interfaz que satisfará al usuario en lo medido.
 
 Pantalla de Bienvenida
 
-![Alta Fidelidad - Pantalla de bienvenida](/src/img/img-readme/Desktop.png)
+![Alta Fidelidad - Pantalla Bienvenida](/src/img/img-readme/desktop-inicio.png)
 
-Pantalla General:
+Pokédex - Pantalla de inicio:
 
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/pantalla_general.png)
+![Alta Fidelidad - Pókedex inicio](/src/img/img-readme/desktop-pokedex-inicio.png)
 
-Pantalla Filtrar por:
+Pokédex - Filtros por tipo: Agua y huevo a 2 km.
 
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/pantalla_filtrar.png)
+![Alta Fidelidad - Pókedex filtrar](/src/img/img-readme/desktop-pokedex-filtros.png)
 
-Pantalla Filtrar por tipo (Agua): 
+Pokédex - Ordenar: 
 
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/filtro_agua.png)
+![Alta Fidelidad - Pokédex ordenar](/src/img/img-readme/desktop-pokedex-ordenar.png)
 
-Pantalla Filtrar por Huevo:
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/filtrar_huevos.png)
+Estadísticas:
 
+![Alta Fidelidad - Estadisticas](/src/img/img-readme/desktop-estadisticas.png)
 
-Pantalla Filtro de Huevo + Tipo Agua aplicado:
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/ha.png)
+Prototipo de Alta Fidelidad, para dispositivos celulares: 
 
+![Alta Fidelidad - Prototipo Móvil](/src/img/img-readme/prototipo-alta-movil.png)
 
-Pantalla Ordenar:
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/sort.png)
-
-Pantalla Ventana modal:
-
-![Alta Fidelidad - Pantalla general](/src/img/img-readme/modal.png)
-
-Link to ZEPLIT: [Pokedash](https://zpl.io/aByZ300)
+Link to ZEPLIN: [Pokedash](https://zpl.io/aByZ300)
 
 ### Planificación:
 
